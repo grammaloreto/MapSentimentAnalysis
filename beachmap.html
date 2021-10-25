@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba030e111f844d43afdc21221530333b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ba030e111f844d43afdc21221530333b" ></div>
+        
+</body>
+<script>    
+    
+            var map_ba030e111f844d43afdc21221530333b = L.map(
+                "map_ba030e111f844d43afdc21221530333b",
+                {
+                    center: [10.410832, -75.903843],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ecd9142cbfab47ddbb6b38fc57a50ac5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var marker_a83c35fbade4405292e257ea3f4f419d = L.marker(
+                [10.2952, -75.5888],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_42d702081beb4464a5713cc1529159a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a83c35fbade4405292e257ea3f4f419d.setIcon(icon_42d702081beb4464a5713cc1529159a5);
+        
+    
+        var popup_ac5b81ef9e4149239f68431df81dedae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbd8d98916b648e6b49f96078343fb3f = $(`<div id="html_bbd8d98916b648e6b49f96078343fb3f" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 2.75 / 5</div>`)[0];
+            popup_ac5b81ef9e4149239f68431df81dedae.setContent(html_bbd8d98916b648e6b49f96078343fb3f);
+        
+
+        marker_a83c35fbade4405292e257ea3f4f419d.bindPopup(popup_ac5b81ef9e4149239f68431df81dedae)
+        ;
+
+        
+    
+    
+            marker_a83c35fbade4405292e257ea3f4f419d.bindTooltip(
+                `<div>
+                     Playa Blanca (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ffb8f27d5e241438b7768cccd6d74b2 = L.marker(
+                [10.3525, -75.5758],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_95abad78969b4f148e444e8aa412ad25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ffb8f27d5e241438b7768cccd6d74b2.setIcon(icon_95abad78969b4f148e444e8aa412ad25);
+        
+    
+        var popup_0c6b6a81530c4b4586483d40613fcbcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3643a422c96c44b8bfd77b9a30c378a1 = $(`<div id="html_3643a422c96c44b8bfd77b9a30c378a1" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 3.3 / 5</div>`)[0];
+            popup_0c6b6a81530c4b4586483d40613fcbcb.setContent(html_3643a422c96c44b8bfd77b9a30c378a1);
+        
+
+        marker_9ffb8f27d5e241438b7768cccd6d74b2.bindPopup(popup_0c6b6a81530c4b4586483d40613fcbcb)
+        ;
+
+        
+    
+    
+            marker_9ffb8f27d5e241438b7768cccd6d74b2.bindTooltip(
+                `<div>
+                     Playas Tierra Bomba (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0754c55793384e60ad2d7b73a5e7df97 = L.marker(
+                [11.2187127, -74.2382051],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_fb030f9bec1949daafbdb7f34ac6e704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0754c55793384e60ad2d7b73a5e7df97.setIcon(icon_fb030f9bec1949daafbdb7f34ac6e704);
+        
+    
+        var popup_27744bb665444381ad7f8779891fd91a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61eefc0b292e408c96cad0ffe2af55e6 = $(`<div id="html_61eefc0b292e408c96cad0ffe2af55e6" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 3.05 / 5</div>`)[0];
+            popup_27744bb665444381ad7f8779891fd91a.setContent(html_61eefc0b292e408c96cad0ffe2af55e6);
+        
+
+        marker_0754c55793384e60ad2d7b73a5e7df97.bindPopup(popup_27744bb665444381ad7f8779891fd91a)
+        ;
+
+        
+    
+    
+            marker_0754c55793384e60ad2d7b73a5e7df97.bindTooltip(
+                `<div>
+                     Playa Blanca (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08fde41c98084091813c9b795915606f = L.marker(
+                [12.195475, -72.147218],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_2e0e95e2648d49d099c93bbc6c488474 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_08fde41c98084091813c9b795915606f.setIcon(icon_2e0e95e2648d49d099c93bbc6c488474);
+        
+    
+        var popup_a5e21ba5942846a8af3f1eb8f74ebed3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4457eeac0e5e428da5442dcab330af51 = $(`<div id="html_4457eeac0e5e428da5442dcab330af51" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 4.5 / 5</div>`)[0];
+            popup_a5e21ba5942846a8af3f1eb8f74ebed3.setContent(html_4457eeac0e5e428da5442dcab330af51);
+        
+
+        marker_08fde41c98084091813c9b795915606f.bindPopup(popup_a5e21ba5942846a8af3f1eb8f74ebed3)
+        ;
+
+        
+    
+    
+            marker_08fde41c98084091813c9b795915606f.bindTooltip(
+                `<div>
+                     Cabo de la Vela (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b3968361f4049a9a00d047607d8afa8 = L.marker(
+                [11.3251, -74.0764],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_2c3e5d9c313b45afaec654524bf13e42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b3968361f4049a9a00d047607d8afa8.setIcon(icon_2c3e5d9c313b45afaec654524bf13e42);
+        
+    
+        var popup_249f66b16cb8452b9378055d4c9093df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_892306e31d6045e790395e34fc0171dc = $(`<div id="html_892306e31d6045e790395e34fc0171dc" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 3.95 / 5</div>`)[0];
+            popup_249f66b16cb8452b9378055d4c9093df.setContent(html_892306e31d6045e790395e34fc0171dc);
+        
+
+        marker_3b3968361f4049a9a00d047607d8afa8.bindPopup(popup_249f66b16cb8452b9378055d4c9093df)
+        ;
+
+        
+    
+    
+            marker_3b3968361f4049a9a00d047607d8afa8.bindTooltip(
+                `<div>
+                     Playa Cristal (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e456604d09a4a35a00efadc401f1dd1 = L.marker(
+                [11.2165, -73.3989],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_e21d3b1be848455380a06aa14d0101ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e456604d09a4a35a00efadc401f1dd1.setIcon(icon_e21d3b1be848455380a06aa14d0101ca);
+        
+    
+        var popup_820e683a36aa4f838c9d9ba3b37d98b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb4a3b4c482347ab9555dd746571d406 = $(`<div id="html_bb4a3b4c482347ab9555dd746571d406" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 3.2 / 5</div>`)[0];
+            popup_820e683a36aa4f838c9d9ba3b37d98b3.setContent(html_bb4a3b4c482347ab9555dd746571d406);
+        
+
+        marker_9e456604d09a4a35a00efadc401f1dd1.bindPopup(popup_820e683a36aa4f838c9d9ba3b37d98b3)
+        ;
+
+        
+    
+    
+            marker_9e456604d09a4a35a00efadc401f1dd1.bindTooltip(
+                `<div>
+                     Palomino (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_475eb11e17634336b5b3965faeef3504 = L.marker(
+                [12.530099, -81.708125],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_a5f93f61f6e34e938c01696d3ecb5628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_475eb11e17634336b5b3965faeef3504.setIcon(icon_a5f93f61f6e34e938c01696d3ecb5628);
+        
+    
+        var popup_24392c8fd347440f9473e9878db3ff3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24f0f85fe0b74d2e87d433229ba9430a = $(`<div id="html_24f0f85fe0b74d2e87d433229ba9430a" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 4.05 / 5</div>`)[0];
+            popup_24392c8fd347440f9473e9878db3ff3c.setContent(html_24f0f85fe0b74d2e87d433229ba9430a);
+        
+
+        marker_475eb11e17634336b5b3965faeef3504.bindPopup(popup_24392c8fd347440f9473e9878db3ff3c)
+        ;
+
+        
+    
+    
+            marker_475eb11e17634336b5b3965faeef3504.bindTooltip(
+                `<div>
+                     Playa San Luis (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_846176fd411f4da9a9e0073092e05123 = L.marker(
+                [12.599826, -81.690615],
+                {}
+            ).addTo(map_ba030e111f844d43afdc21221530333b);
+        
+    
+            var icon_b3b8996d39934a6ea8a7d4f5cfcd4bfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_846176fd411f4da9a9e0073092e05123.setIcon(icon_b3b8996d39934a6ea8a7d4f5cfcd4bfe);
+        
+    
+        var popup_cd9fb3a7b1324c5d8bdbf8004a5271b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_393c7d565ea142159c3361cbcefb1307 = $(`<div id="html_393c7d565ea142159c3361cbcefb1307" style="width: 100.0%; height: 100.0%;">Analisis de Sentimientos TripAdvisor: 3.15 / 5</div>`)[0];
+            popup_cd9fb3a7b1324c5d8bdbf8004a5271b1.setContent(html_393c7d565ea142159c3361cbcefb1307);
+        
+
+        marker_846176fd411f4da9a9e0073092e05123.bindPopup(popup_cd9fb3a7b1324c5d8bdbf8004a5271b1)
+        ;
+
+        
+    
+    
+            marker_846176fd411f4da9a9e0073092e05123.bindTooltip(
+                `<div>
+                     Johnny Cay (click para analisis de sentimientos)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
